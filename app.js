@@ -16,7 +16,6 @@ function addResizeCanvasListener() {
 
     // update window.innerWidth and window.visualViewport.width
     // essentially we want to push the adds out of the viewport
-    window.innerWidth = pageWidth + adsWidth;
     Object.defineProperty(window, 'visualViewport', {
       configurable: true,
       value: new Proxy(window.visualViewport, {
